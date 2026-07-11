@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 const PRESENTATION_NAME = 'bible-stories';
-const DOWNLOAD_URL = '/bible-stories/pdf/Bible-Stories.pdf';
+const DOWNLOAD_URL = 'https://drive.google.com/uc?export=download&id=1AKUKgVWHA2YfPLV4cjwqaCOwxnegxVmT';
 const PPT_URL = 'https://1drv.ms/p/c/9da6160325629680/IQCAlmIlAxamIICd1QMAAAAAAXgCGwaUB9WUlii7hB-n4ZE?e=rMw4Wx';
 
 const STORAGE_KEY_PROGRESS = `pdfViewer.progress.${PRESENTATION_NAME}`;
@@ -148,8 +148,8 @@ export default function Home() {
               transform: mounted ? 'translateY(0)' : 'translateY(16px)',
             }}
           >
-            Made with 🤍 for God & his people<br />
-            Copyright © : 2026+ Kevin Menezes
+            Made with 🤍 for God & His people<br />
+            Copyright © : 2026 Kevin Menezes. All Rights Reserved.
           </div>
         </div>
 
