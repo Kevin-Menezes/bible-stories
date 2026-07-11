@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 const PRESENTATION_NAME = 'bible-stories';
 const PDF_URL = '/pdf/Bible-Stories.pdf';
 const PPT_URL = 'https://1drv.ms/p/c/9da6160325629680/IQCAlmIlAxamIICd1QMAAAAAAXgCGwaUB9WUlii7hB-n4ZE?e=rMw4Wx';
-const TOTAL_PAGES = 154; // will be updated from index
+const TOTAL_PAGES = 654; // will be updated from index
 const PAGES_BASE_URL = '/bible-stories/pages';
 
 const STORAGE_KEYS = {

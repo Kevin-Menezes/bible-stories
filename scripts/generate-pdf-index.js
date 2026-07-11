@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { getDocument } = require('pdfjs-dist/legacy/build/pdf.js');
 
-const PDF_FILE_PATH = path.join(process.cwd(), 'public/pdf/Bible Stories.pdf');
+const PDF_FILE_PATH = path.join(process.cwd(), 'public/pdf/Bible-Stories.pdf');
 
 function cleanupText(text) {
   return String(text || '')
@@ -23,7 +23,7 @@ async function main() {
   if (!force && fs.existsSync(outPath)) {
     try {
       const existing = JSON.parse(fs.readFileSync(outPath, 'utf8'));
-      if (existing && existing.fileName === 'Bible Stories.pdf' && Number(existing.totalPages) > 0) {
+      if (existing && existing.fileName === 'Bible-Stories.pdf' && Number(existing.totalPages) > 0) {
         process.stdout.write(`Using existing ${outPath} (${existing.totalPages} pages)\n`);
         return;
       }
@@ -49,7 +49,7 @@ async function main() {
   }
 
   const out = {
-    fileName: 'Bible Stories.pdf',
+    fileName: 'Bible-Stories.pdf',
     filePath: PDF_FILE_PATH,
     totalPages: totalPages,
     generatedAt: new Date().toISOString(),
